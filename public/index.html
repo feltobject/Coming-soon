@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fffdf5" />
+    <meta name="description" content="Felt Object is making a tiny, colorful world of wool felt. Join the list for a first peek." />
+    <title>Felt Object — a little woolly world is coming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the good stuff</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Felt Object home">
+        <img src="./assets/felt-object-logo.webp" alt="Felt Object" width="1568" height="1003" />
+      </a>
+      <p class="opening-tag"><span class="status-dot" aria-hidden="true"></span> A little world is taking shape</p>
+      <a class="header-link" href="#waitlist">Get first dibs <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M5 4h7v7" /></svg></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title"><span class="desktop-title">Small things.<br /><b>Big soft</b><br />feelings.</span><span class="mobile-title"><b>Woolly</b> wonders<br />are coming.</span></h1>
+          <p class="intro">A playful little world made of wool is on its way. Come say hello when the flock arrives.</p>
+          <a class="primary-link" href="#waitlist">Come on the list <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M5 4h7v7" /></svg></a>
+          <p class="tiny-note">No noise. Just a note when we open.</p>
+        </div>
+
+        <div class="playroom" id="playroom" aria-label="A paper-cut wool-felt scene with a sheep, duck and bird">
+          <img class="felt-world" src="./assets/felt-world.webp" alt="A sheep, duck and bird made from layered felt shapes on a sunny yellow wool mat" width="1536" height="1024" fetchpriority="high" />
+          <span class="orbit-note">THE FLOCK IS READY</span>
+          <div class="puff-layer" id="puff-layer" aria-hidden="true"></div>
+          <div class="game-panel">
+            <div class="game-copy">
+              <span class="game-title">Toss a puff</span>
+              <span class="game-status" id="game-status" aria-live="polite">0 of 5 · make the flock wiggle</span>
+            </div>
+            <div class="wool-balls" role="group" aria-label="Toss a wool puff">
+              <button class="wool-ball wool-ball-lime" type="button" aria-label="Toss a neon lime puff" data-color="lime"></button>
+              <button class="wool-ball wool-ball-yellow" type="button" aria-label="Toss a sunny yellow puff" data-color="yellow"></button>
+              <button class="wool-ball wool-ball-orange" type="button" aria-label="Toss a bright orange puff" data-color="orange"></button>
+            </div>
+            <button class="replay-button" id="replay-button" type="button" hidden>Play again</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="waitlist" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="waitlist-intro">
+          <h2 id="waitlist-title">Want a little<br />heads-up?</h2>
+          <p>Leave your email. We’ll let you know when the shop is ready for visitors.</p>
+        </div>
+        <form class="signup-form" id="waitlist-form" novalidate>
+          <label for="email">Your email address</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          <button type="submit">Count me in <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M5 4h7v7" /></svg></button>
+          </div>
+          <label class="honey-field" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <p class="form-message" id="form-message" role="status" aria-live="polite">Just one launch note when we’re ready. Your address stays with Felt Object.</p>
+        </form>
+        <svg class="waitlist-star" aria-hidden="true" viewBox="0 0 48 48"><path d="M24 2 28 17 42 9 33 23 47 27 32 29 40 43 26 35 22 48 20 33 6 41 14 27 1 23 16 21 8 7 22 15Z" /></svg>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-mark" href="#top">felt object</a>
+      <p>Soft things are taking shape.</p>
+      <a href="#top" class="back-to-top">Back to the top</a>
+    </footer>
+  </body>
+</html>
